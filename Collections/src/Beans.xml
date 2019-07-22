@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+  
+  <bean id="snkBean" class="collectionPack.SnacksBar">
+     <property name="chocolates">
+        <list>
+            <value>Dairy Milk</value>
+            <value>Perk</value>
+            <value>5 Star</value>
+            <value>Snickers</value>
+            <value>Munch</value>
+            <value>Gems</value>
+            <value>Milky Bar</value>
+        </list>
+     </property>
+  </bean> 
+   <bean id="hdBean" class="collectionPack.HotDrinks">
+     <property name="drinks">
+        <set>
+            <value>Tea</value>
+            <value>Coffee</value>
+            <value>Hot chocolate</value>
+            <value>Green Tea</value>
+            <value>Chocolate Milk</value>
+        </set>
+     </property>
+  </bean> 
+    <bean id="bhBean" class="collectionPack.MapEx">
+     <property name="bhels">
+       <map>
+       <entry key="1" value="corn bhel"/>
+        <entry key="2" value="matki bhel"/>
+         <entry key="3" value="oli bhel"/>
+       </map>
+     </property>
+  </bean>
+  
+   </beans>

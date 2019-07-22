@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id= "perBean" class = "Inherit.Person">
+   <!--  <property name="name" value="Alis"></property>
+   <property name="age" value="22"></property>
+   <property name="address" value="Goa"></property>-->
+   <constructor-arg index="0" value="Alis"></constructor-arg>
+   <constructor-arg index="1" value="22"></constructor-arg>
+   <constructor-arg index="2" value="Pune"></constructor-arg>
+  
+   </bean>
+     <bean id= "empBean" class = "Inherit.Employee" parent="perBean">
+    <!-- <property name="cname" value="Cognizant"></property>
+   <property name="salary" value="23452.56"></property>
+   <property name="profile" value="test"></property>-->
+
+   <constructor-arg index="3" value="Cognizant"></constructor-arg>
+   <constructor-arg index="4" value="23452.56"></constructor-arg>
+   <constructor-arg index="5" value="test"></constructor-arg>
+   
+   
+   </bean>
+   
+   </beans>
